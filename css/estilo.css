@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#cabecalho {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #000;
+    align-items: center;
+    width: 100vw;
+}
+
+#cabecalho img {
+    height: 100px;
+
+}
+
+.logo {
+  margin-left: 70px;
+}
+
+#menu ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    margin-right: 70px;
+   
+}
+
+#menu ul a {
+    text-decoration: none;
+    color: #c0c0c0;
+    font-size: 1.4rem;
+    margin: 0 15px;  
+    position: relative;
+    display: inline-block;
+
+}
+
+#menu a::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background: #fff;
+    margin-top: 2px;
+    transition: 0.7s ease;
+    width: 0px;
+    position: absolute;
+}
+
+#menu a:hover::after {
+    width: 100%;
+}
+
+/* BANNER */
+
+#banner {
+    background-image: url(../imagens/background-banner.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    height: 800px;
+}
+
+
+/* QUEM SOMOS */
+
+#quem-somos {
+    background-color: #c0c0c0;
+
+
+}
+.container {
+    width: 1200px;
+    margin: 10px auto;
+    display: flex;
+    gap: 50px;
+
+}
+
+
+/* AVALIAÇÕES */
+
+/* RESPONSIVO */
+@media (max-width: 800px) {
+    #cabecalho {
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #menu ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     
+    }
+    .logo {
+        margin: 0px
+      }
+
+}
